@@ -17,11 +17,6 @@ class ArtistSerializer(serializers.ModelSerializer):
         model = Artist
         fields = '__all__'
         
-class ArtistHyperlinkSerializer(serializers.HyperlinkedModelSerializer):
-    """
-    Set a url field instead of a pk field (ex: url: 'http://api.example.com')
-    """
-
 class AlbumSerializer(serializers.ModelSerializer):
     class Meta:
         model = Album
